@@ -1,20 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+@media(max-width:1200px){
+    section p{ width: 320px;
+               width: 400px;
+              text-align: center;
+              font-size: 1.5em;
+              line-height: 2em;               
+              
+    }
+}
+:root{
+    --color1:black;
+    --color2:white;
+    --color3:darkgrey;
+    --color4:#42443ed2;
+}
 
 
-
-*{
+*{ 
     margin: 0;
     padding: 0;
 }
 html body{
-    background-color: darkgrey;
+    background-color: var(--color2);
     min-height: 100%;
+    
 }
 header{
-    background-color: black;
-        color: white;
+    background-color: var(--color1);
+        color:var(--color2);
         text-align: center;
         align-items: center;
 
@@ -23,7 +38,7 @@ header > h1{
     padding-top: 50px;
     font-variant: small-caps;
     font-family: 'Passion One', cursive;
-    font-size: 130px;
+    font-size: 10vw;
 
 }
 header > p {
@@ -36,36 +51,56 @@ header > p > a{
     font-weight: bolder;
 }
 header > p > a:visited{
-    color: white;
+    color: var(--color2);
 }
 header > p > a:hover{
     text-decoration: underline;
 } 
 section{
     padding: 10vh 0px 10vh 5vh;
-    font: 40px  'Sriracha', cursive;
+    font: 3.5vw  'Sriracha', cursive;
     line-height: 2em;
-}
-.normal{
-    background-color: white;
-}
-.imagem{
-    color: white;
-    background-color: blueviolet;
+    min-width: 1200px;
     
 }
-.imagem > p{
-    width: 400px;
-    background-color: black;
+
+
+.normal{
+    background-color: var(--color2);
 }
+section#img1{
+    color: var(--color2);
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+section#img2{
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--color2); 
+    background-position: right center;       
 
-
-
+}
+section#img1 p{
+    background-color:#00050081;
+    text-shadow: 1px 1px 1px var(--color1);
+}
+section#img2 p{
+    background-color: var(--color4);
+    text-shadow: 1px 1px 1px var(--color1);
+}
+.imagem > p{
+    display: inline-block;
+    background-color: var(--color1);
+}
 
 
 footer > p{
-    background-color: black;
-    color: white;
+    background-color: var(--color1);
+    color: var(--color2);
     text-align: center;
     align-items: center;
     padding: 10px;
@@ -77,7 +112,7 @@ footer > p > a{
     text-decoration: none;
 }
 footer > p > a:visited{
-    color: white;
+    color: var(--color2);
 }
 footer > p > a:hover{
     text-decoration: underline;
